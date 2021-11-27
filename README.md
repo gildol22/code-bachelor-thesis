@@ -9,11 +9,12 @@ The code is written in MATLAB (Version R2020b) and ordered in the following stru
 1. Kernel files:
     * "ROFdecom_FPGS.m", "ROFdecom_FPGS_STOP.m" and "ROFdecom_FPGSrot.m" are functions that approximate a minimiser to the ROF problem
     * "ROFinitOptimal.m" is a function to compute the 'optimal parameter' for the ROF initialisation
+    * "im2Dsetup.m" and "minEx_ROFDecom.m" are internally used for visualisation and producing minimal examples
     * "bvHierarchDecom.m"  is a function that computes a hierarchical image decomposition solely by the forward procedure
     * "bvHierarchDecom_BackFor.m"  is a function that computes a hierarchical image decomposition, starting with backward initialisation followed by the forward procedure
 2. Test files:
     * "testROF.m" is a script to compute the ROF decomposition of an image
-    * "testHierarch.m" to compute the hierarchical decomposition of an image
+    * "testHierarch.m" is a script to compute the hierarchical decomposition of an image
     * "testHierarchProp.m", "testHierarchView.m" are scripts to view and further analyse a previously computed hierarchical image decomposition
     * "testHierarchViewFctn.m" can be called to view a previously computed hierarchical image decomposition at instance 'l' after initialising with "testHierarchView.m"
 3. The script files used to compute the images presented in the bachelor thesis:
