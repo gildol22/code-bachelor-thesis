@@ -195,6 +195,7 @@ clf;
 %{x
 f=[zeros(64,1); ones(128,1); zeros(64,1)] * ...
   [zeros(1,64), ones(1,128), zeros(1,64)] ;
+D=[0,0;1,1];
 
 %original image
 figure(8)
@@ -203,8 +204,8 @@ exportgraphics(gca,'./Results/imageROF_examples_8f.png');
 clf;
 
 %result
-u = ROFdecom_FPGSrot(f, 5e0, 'optimalInit', false, 'stopTol', 1e-8, ...
-  'visualiseROF', true, 'displayROF', true, 'maxIter', 1000, 'pauseTime', 0);
+u = ROFdecom_FPGSrot(f, 2e0, 'optimalInit', false, 'stopTol', 1e-8, ...
+  'visualiseROF', true, 'displayROF', true, 'maxIter', 2000, 'pauseTime', 0);
 
 figure(8)
 im2Dsetup(u,D,[0,1]);
